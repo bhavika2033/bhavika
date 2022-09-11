@@ -1,0 +1,214 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>27/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Sep 10 16:44:37 EDT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>48 seconds (48204 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.DynamicContentTest.RefreshPage1()'><b>RefreshPage1</b><br>Test class: tests.DynamicContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.DynamicContentTest@75d2da2d</td></tr>
+<tr>
+<td title='tests.DynamicContentTest.RefreshPage2()'><b>RefreshPage2</b><br>Test class: tests.DynamicContentTest</td>
+<td></td>
+<td>0</td>
+<td>tests.DynamicContentTest@75d2da2d</td></tr>
+<tr>
+<td title='tests.FloatingMenuTest.ScrollWindow()'><b>ScrollWindow</b><br>Test class: tests.FloatingMenuTest</td>
+<td></td>
+<td>0</td>
+<td>tests.FloatingMenuTest@7d286fb6</td></tr>
+<tr>
+<td title='tests.FrameTestTest.SwitchToFrame()'><b>SwitchToFrame</b><br>Test class: tests.FrameTestTest</td>
+<td></td>
+<td>0</td>
+<td>tests.FrameTestTest@14f9390f</td></tr>
+<tr>
+<td title='tests.LoginSuccessTest.UserLoggedIn()'><b>UserLoggedIn</b><br>Test class: tests.LoginSuccessTest</td>
+<td></td>
+<td>0</td>
+<td>tests.LoginSuccessTest@71e693fa</td></tr>
+<tr>
+<td title='tests.FileUploadTest.VerifyFileUploaded()'><b>VerifyFileUploaded</b><br>Test class: tests.FileUploadTest</td>
+<td></td>
+<td>0</td>
+<td>tests.FileUploadTest@7d898981</td></tr>
+<tr>
+<td title='tests.FrameTestTest.VerifyText()'><b>VerifyText</b><br>Test class: tests.FrameTestTest</td>
+<td></td>
+<td>0</td>
+<td>tests.FrameTestTest@14f9390f</td></tr>
+<tr>
+<td title='tests.ContextTest.acceptAlert()'><b>acceptAlert</b><br>Test class: tests.ContextTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContextTest@4278284b</td></tr>
+<tr>
+<td title='tests.CheckBoxesTest.checkBox1()'><b>checkBox1</b><br>Test class: tests.CheckBoxesTest</td>
+<td></td>
+<td>0</td>
+<td>tests.CheckBoxesTest@48d61b48</td></tr>
+<tr>
+<td title='tests.CheckBoxesTest.checkBox2()'><b>checkBox2</b><br>Test class: tests.CheckBoxesTest</td>
+<td></td>
+<td>0</td>
+<td>tests.CheckBoxesTest@48d61b48</td></tr>
+<tr>
+<td title='tests.NotificationTest.clickAndVerify()'><b>clickAndVerify</b><br>Test class: tests.NotificationTest</td>
+<td></td>
+<td>0</td>
+<td>tests.NotificationTest@68d279ec</td></tr>
+<tr>
+<td title='tests.FileDownloadTest.clickLink()'><b>clickLink</b><br>Test class: tests.FileDownloadTest</td>
+<td></td>
+<td>0</td>
+<td>tests.FileDownloadTest@4f6f416f</td></tr>
+<tr>
+<td title='tests.DynamicControlsTest.clickOnDisable()'><b>clickOnDisable</b><br>Test class: tests.DynamicControlsTest</td>
+<td></td>
+<td>3</td>
+<td>tests.DynamicControlsTest@21129f1f</td></tr>
+<tr>
+<td title='tests.DragAndDropTest.dragColumnAtoB()'><b>dragColumnAtoB</b><br>Test class: tests.DragAndDropTest</td>
+<td></td>
+<td>1</td>
+<td>tests.DragAndDropTest@332729ad</td></tr>
+<tr>
+<td title='tests.DropDownTest.dropDownTest1()'><b>dropDownTest1</b><br>Test class: tests.DropDownTest</td>
+<td></td>
+<td>0</td>
+<td>tests.DropDownTest@258d79be</td></tr>
+<tr>
+<td title='tests.DropDownTest.dropDownTest2()'><b>dropDownTest2</b><br>Test class: tests.DropDownTest</td>
+<td></td>
+<td>0</td>
+<td>tests.DropDownTest@258d79be</td></tr>
+<tr>
+<td title='tests.LoginFailureTest.errorIsDisplayed()'><b>errorIsDisplayed</b><br>Test class: tests.LoginFailureTest</td>
+<td></td>
+<td>0</td>
+<td>tests.LoginFailureTest@5965be2d</td></tr>
+<tr>
+<td title='tests.MouseHoverTest.hoverOnUser1()'><b>hoverOnUser1</b><br>Test class: tests.MouseHoverTest</td>
+<td></td>
+<td>0</td>
+<td>tests.MouseHoverTest@3b8f0a79</td></tr>
+<tr>
+<td title='tests.MouseHoverTest.hoverOnUser2()'><b>hoverOnUser2</b><br>Test class: tests.MouseHoverTest</td>
+<td></td>
+<td>0</td>
+<td>tests.MouseHoverTest@3b8f0a79</td></tr>
+<tr>
+<td title='tests.MouseHoverTest.hoverOnUser3()'><b>hoverOnUser3</b><br>Test class: tests.MouseHoverTest</td>
+<td></td>
+<td>0</td>
+<td>tests.MouseHoverTest@3b8f0a79</td></tr>
+<tr>
+<td title='tests.LoginFailureTest.loginWrongIdPass()'><b>loginWrongIdPass</b><br>Test class: tests.LoginFailureTest</td>
+<td></td>
+<td>0</td>
+<td>tests.LoginFailureTest@5965be2d</td></tr>
+<tr>
+<td title='tests.ContextTest.rightClick()'><b>rightClick</b><br>Test class: tests.ContextTest</td>
+<td></td>
+<td>0</td>
+<td>tests.ContextTest@4278284b</td></tr>
+<tr>
+<td title='tests.DynamicControlsTest.verifyCheckBoxPresent()'><b>verifyCheckBoxPresent</b><br>Test class: tests.DynamicControlsTest</td>
+<td></td>
+<td>3</td>
+<td>tests.DynamicControlsTest@21129f1f</td></tr>
+<tr>
+<td title='tests.DynamicControlsTest.verifyCheckBoxRemoved()'><b>verifyCheckBoxRemoved</b><br>Test class: tests.DynamicControlsTest</td>
+<td></td>
+<td>3</td>
+<td>tests.DynamicControlsTest@21129f1f</td></tr>
+<tr>
+<td title='tests.FileDownloadTest.verifyDownload()'><b>verifyDownload</b><br>Test class: tests.FileDownloadTest</td>
+<td></td>
+<td>0</td>
+<td>tests.FileDownloadTest@4f6f416f</td></tr>
+<tr>
+<td title='tests.JavaScriptErrorTest.verifyError()'><b>verifyError</b><br>Test class: tests.JavaScriptErrorTest</td>
+<td></td>
+<td>0</td>
+<td>tests.JavaScriptErrorTest@176b75f7</td></tr>
+<tr>
+<td title='tests.DynamicControlsTest.verifyTextBoxEnabled()'><b>verifyTextBoxEnabled</b><br>Test class: tests.DynamicControlsTest</td>
+<td></td>
+<td>3</td>
+<td>tests.DynamicControlsTest@21129f1f</td></tr>
+</table><p>
+</body>
+</html>
